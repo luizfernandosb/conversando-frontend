@@ -140,9 +140,9 @@ export default function Chat() {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg shadow-md h-full w-full max-w-full lg:w-full flex flex-col justify-between sm:p-6">
+    <div className="bg-gray-100 p-4 rounded-lg shadow-md h-full w-full max-w-full lg:w-full flex flex-col justify-between sm:p-6 mb-10">
       <div className="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-500 to-purple-600 p-4 flex items-center justify-between shadow-lg z-10">
-        <div className="text-white text-3xl font-extrabold tracking-wide flex items-center space-x-2">
+        <div className="text-white text-3xl font-extrabold tracking-wide flex items-center space-x-2 ">
           <span className="text-yellow-400">Conversando</span>
           <span>App</span>
         </div>
@@ -155,7 +155,7 @@ export default function Chat() {
       </div>
       <div
         ref={chatContainerRef}
-        className="space-y-6 overflow-y-auto mb-4 flex-grow pt-20 mb-10"
+        className="space-y-6 overflow-y-auto mb-4 flex-grow pt-20 "
         onScroll={checkIfAtBottom}
       >
         {messageList.map((message) => (
